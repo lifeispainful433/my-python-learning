@@ -7,10 +7,10 @@
 
 **收获**
 1. 想要获得一个[0,1)区间的随机数，可以利用random.random()这个函数。
-拓展如下：	
-       [0, N) 的浮点数	r * N	               random.random() * 10	          生成 [0.0, 10.0) 的随机小数
-       [A, B) 的浮点数	A + r * (B - A)	       5 + random.random() * (10-5)	  生成 [5.0, 10.0) 的随机小数
-       [A, B] 的整数	random.randint(A, B)   random.randint(1, 6)	          生成 1 到 6 的随机整数（含两端）
+    拓展如下：	
+    [0, N) 的浮点数	r * N	               random.random() * 10	          生成 [0.0, 10.0) 的随机小数
+    [A, B) 的浮点数	A + r * (B - A)	       5 + random.random() * (10-5)	  生成 [5.0, 10.0) 的随机小数
+    [A, B] 的整数	random.randint(A, B)   random.randint(1, 6)	          生成 1 到 6 的随机整数（含两端）
 2. 字符串格式化方法f-string，利用{}放置一块动态区域。
 3. :.4f保留四位小数。
 4. 需要随机数，请调用random库。
