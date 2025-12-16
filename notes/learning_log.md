@@ -42,3 +42,28 @@ keep moving gogogo
 
 做抛体运动的项目，有些累了，去做点别的。
 但愿，一切都会更好。
+
+
+## 2025-12-16
+
+**收获**
+1. 需要绘制图表可以利用matplotlib库。
+2. 定义函数<br>def print_results(angle, results):<br>定义函数时写好位置参数，可以反复利用。
+3. 字典的嵌套<br> results[angle] = {
+        "Vx" : Vx,
+        "Vy" : Vy,
+        "flight_time" : total_t,
+        "range" : range_x,
+        "trajectory": trajectory 
+    }
+results这本字典里的值angle同时也是一个键，这样就创建了一个子字典，这样动态赋值很方便。
+4.  x_coords = [p[0] for p in trajectory]
+    y_coords = [p[1] for p in trajectory]<br>如果要画表格，要想这样摘取数据，p[0]代表的是列表中所有x的值，p[1]是列表中所有y的值。
+5.  plt.figure(figsize=(8, 5))
+    plt.plot(x_coords,y_coords, 'ro-', linewidth=2, label='小球轨迹')><br>第一行是创建了一张画板，第二行是放入x，y的值，ro-是线调为红色，linewidth=2, label='小球轨迹'分别是线宽和标题名。
+
+**问题**
+1. 没有思考好逻辑就动手是很有问题的。
+
+**感想**
+<br>好累，有点累，但还不错。<br>今天又开始回忆，也不知道为什么。<br>在小屋里，仍要徘徊，也许仍要前行，毕竟仍有明天。
